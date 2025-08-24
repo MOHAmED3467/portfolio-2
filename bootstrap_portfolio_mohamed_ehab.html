@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Ehab | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { transition: background 0.3s, color 0.3s; }
+    .dark-mode { background: #121212; color: #f8f9fa; }
+    .dark-mode .card { background: #1e1e1e; color: #fff; }
+    .dark-mode .navbar, .dark-mode footer { background: #000 !important; }
+    .timeline { position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 50%; width: 4px; background: #0d6efd; top: 0; bottom: 0; margin-left: -2px; }
+    .timeline-item { position: relative; width: 50%; padding: 20px; }
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 50%; }
+    .timeline-item::before { content: ''; position: absolute; top: 20px; width: 20px; height: 20px; border-radius: 50%; background: #0d6efd; z-index: 1; }
+    .timeline-item.left::before { right: -10px; }
+    .timeline-item.right::before { left: -10px; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mohamed Ehab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-3" id="modeToggle"><i class="bi bi-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center text-white bg-primary py-5" data-aos="fade-up">
+    <div class="container">
+      <h1 class="fw-bold">Hello, I'm Mohamed Ehab</h1>
+      <p class="lead">Software Engineer | Flutter & Web Developer | Embedded Systems Enthusiast</p>
+      <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5" data-aos="fade-right">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>
+            I am Mohamed Ehab Sayed Mahmoud, a passionate Software Engineer skilled in web and mobile development,
+            as well as embedded systems. With experience in C, Java, C++, Python, and Flutter, I have built multiple
+            real-world projects ranging from web applications to IoT solutions. I strive to create impactful and
+            innovative solutions while continuously learning new technologies.
+          </p>
+          <a href="Science and Engineering Resume in Green Black Simple Style.pdf" download class="btn btn-outline-primary mt-3"><i class="bi bi-file-earmark-text"></i> Download CV</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/480158443_1994838680996744_7301553058160914190_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE0hX9jbJO2rOMspvQI0pTID5l0Q5s85jMPmXRDmzzmM4KPDVKr49ppnfjvpu2UH-PfxJkA-TE_FMjXJ5EZ3p-f&_nc_ohc=cSSkVlYo9aAQ7kNvwGqeUoH&_nc_oc=AdkUYuwKeQ9XtcCy0GDNl-6SGMee0ofEiQ8BfYwzF9ulkpmzyTCtRp5wcXf-iYZ8Yuc&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=z03ZMzUGIjBBJUE5BUlDPQ&oh=00_AfXYGYmsid9OTU-cXT528qCCQCajlvrh_CIBwWXeLrfaBA&oe=68B15A16" alt="Profile" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">TechVerse 2025</h5>
+              <p class="card-text">A modern tech conference registration website built with HTML & Bootstrap.</p>
+              <a href="https://mohamed3467.github.io/techverse-2025/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">TechFlow Website</h5>
+              <p class="card-text">A professional company website showcasing services and solutions.</p>
+              <a href="https://mohamed3467.github.io/techflow-website/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List (Web)</h5>
+              <p class="card-text">A simple to-do list web app to manage daily tasks efficiently.</p>
+              <a href="https://github.com/MOHAmED3467/to-do-list" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List (Flutter)</h5>
+              <p class="card-text">A cross-platform to-do list app built with Flutter for Android/iOS.</p>
+              <a href="https://github.com/MOHAmED3467/to-do-list-use-flutter" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Car Football (Arduino)</h5>
+              <p class="card-text">An Arduino-based IoT project controlling a football-playing car.</p>
+              <a href="https://github.com/MOHAmED3467/car-football-use-Arduino" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Calculator Web App</h5>
+              <p class="card-text">A responsive calculator built with JavaScript and CSS.</p>
+              <a href="https://github.com/MOHAmED3467/calculator-WebApp" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Analog Clock</h5>
+              <p class="card-text">A creative analog clock using JS & CSS animations.</p>
+              <a href="https://github.com/MOHAmED3467/analog-clock-js-css" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Todo App</h5>
+              <p class="card-text">Another variation of a to-do app project focusing on UI/UX.</p>
+              <a href="https://github.com/MOHAmED3467/-Todo-App" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5" data-aos="fade-left">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Web Development</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 90%">90%</div>
+          </div>
+          <p>Flutter & Mobile Apps</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-info" style="width: 85%">85%</div>
+          </div>
+          <p>Embedded Systems</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 80%">80%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>Python / Java / C++</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+          </div>
+          <p>Database & Firebase</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-primary" style="width: 70%">70%</div>
+          </div>
+          <p>Problem Solving</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-secondary" style="width: 85%">85%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Education & Experience Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <h5>Bachelor of Technology – New Cairo Technology College</h5>
+          <p class="text-muted">2022 – Expected 2026</p>
+          <p>Studied Frontend & Backend development, specialized in Embedded Systems & Flutter mobile apps.</p>
+        </div>
+        <div class="timeline-item right">
+          <h5>Student Projects – NCT College</h5>
+          <p class="text-muted">2022 – 2025</p>
+          <p>Worked on multiple projects: Smart Garage Parking System, University Website, Hedayati App, Car Reporting System.</p>
+        </div>
+        <div class="timeline-item left">
+          <h5>Garage Smart System</h5>
+          <p class="text-muted">2024</p>
+          <p>Developed a smart parking management IoT system.</p>
+        </div>
+        <div class="timeline-item right">
+          <h5>Hedayati Mobile App</h5>
+          <p class="text-muted">2025</p>
+          <p>Created a guidance app to assist users with navigation and daily tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Awards & Certificates</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-award"></i> Training Certificate</h5>
+              <p class="card-text">Jlecom Company – 2023</p>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-award"></i> Training Certificate</h5>
+              <p class="card-text">Information Technology Institute (ITI) – 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:20220636@nctu.edu.eg" class="text-white">20220636@nctu.edu.eg</a></p>
+      <p>WhatsApp: <a href="https://wa.me/201552407909" class="text-white">+20 155 240 7909</a></p>
+      <p>
+        <a href="https://github.com/MOHAmED3467" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-ehab-sayed-mahmoud-ict-587322345/" target="_blank" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-white py-3">
+    <p class="mb-0">&copy; 2025 Mohamed Ehab | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const toggleBtn = document.getElementById('modeToggle');
+    toggleBtn.addEventListener('click', ()=>{
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon"></i>';
+    });
+  </script>
+</body>
+</html>
